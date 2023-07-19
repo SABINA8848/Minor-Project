@@ -1,0 +1,164 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: "poppins", sans-serif;
+  line-height:  1.7;
+  color:white;
+  background:rgb(249, 220, 218, 100%);
+
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.section{
+  padding: 6rem 0;
+
+}
+section h2{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+h1, h2, h3, h4, h5{
+  line-height: 1.2;
+
+}
+h1{
+font-size: 2.4rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size:1.6rem 
+  ;
+}
+h4{
+  font-size: 1.3rem;
+
+}
+a{
+  color: rgb(181, 178, 178) ;
+}
+
+  
+  
+  
+
+
+
+
+.btn{
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition:all 400ms ease ;
+}
+.btn:hover{
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+nav{
+  background:rgb(115, 82, 21);
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.nav__menu{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav__container{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav button{
+  display: none;
+}
+
+.nav__menu a{
+  font-size: 0.9rem;
+  transition: all 400ms ease;
+  position: relative;
+}
+a:hover{
+  color: white;
+} 
+.sheet{
+  padding-top: 20px;
+  text-align: center;
+  background-color: rgb(242, 197, 141);
+  padding-bottom: 20px;
+}
+section.bod{
+  padding-top:5rem;
+}
+
+.inform{
+  color:  rgb(94, 0, 66,  100%);
+  text-align: center;
+}
+
+.Attend {
+  max-width: 800px;
+  margin: 50px auto; 
+  background-color: rgb(217, 174, 144);
+
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #edcf82;
+}
+
+tr:hover {
+  background-color: #edcf82;
+}
+
+th {
+  background-color: #edcf82;
+}
+
+tr:nth-child(even) {
+  background-color:#edcf82;
+}
+
+
+
+
+

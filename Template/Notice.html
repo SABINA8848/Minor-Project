@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student </title>
+    <link rel="stylesheet" href="{% static 'Notice.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="Dashboard.html"></a>
+               
+                <h1>College</h1>
+            <ul class="nav__menu">
+                <li><a href="{% url 'dashboard' %}">Profile</a>
+                </li>
+                <li><a href="{% url 'notice' %}">Notice</a>
+                </li>
+               
+                <li><a href="{% url 'syllabus' %}">Syallbus</a></li>
+                <li><a href="{% url 'attendance' %}">Attendance</a></li>
+                <li><a href="{% url 'syllabus' %}">Syallbus&OQ</a></li>
+                <li><a href="{% url 'staffs' %}">Staffs</a> </li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="Notice">
+      <img src="{%static 'preview_image20210827-22504-1yprf6c-removebg-preview.png' %}" alt="">
+        <h1>Student Notice Board</h1>
+        <div class="notices">
+            <div class="notice">
+                <h2>Important Notice</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, felis nec varius commodo, justo turpis congue ligula, non consectetur lectus purus sed ligula.</p>
+            </div>
+            <div class="notice">
+                <h2>Upcoming Event</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, felis nec varius commodo, justo turpis congue ligula, non consectetur lectus purus sed ligula.</p>
+            </div>
+            <div class="notice">
+                <h2>Exam Schedule</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, felis nec varius commodo, justo turpis congue ligula, non consectetur lectus purus sed ligula.</p>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student </title>
+    <link rel="stylesheet" href="{% static 'Staff.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="Dashboard.html"></a>
+                
+                <h1>College</h1>
+            <ul class="nav__menu">
+                <li><a href="{% url 'dashboard' %}">Profile</a>
+                </li>
+                <li><a href="{% url 'notice' %}">Notice</a>
+                </li>
+               
+                <li><a href="{% url 'syllabus' %}">Syallbus</a></li>
+                <li><a href="{% url 'attendance' %}">Attendance</a></li>
+                <li><a href="{% url 'syllabus' %}">Syallbus&OQ</a></li>
+                <li><a href="{% url 'staffs' %}">Staffs</a> </li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
+                
+            </ul>
+         
+          
+
+
+      
+
+        </div>
+    </nav>
+    <div class="staff">
+        <img src="{% static 'pro.png' %}" alt="">
+        <p class="ridge">Loid Forger</p>
+        <p class="ridge">Head/Finance and Admin</p>
+        <p class="ridge">Contact no: 9808567342</p>
+        <p class="ridge">Email:rock@gmail.com</p>
+
+    </div>
+    <div class="staff-1">
+        <img src="{% static 'pro.png' %}" alt="">
+        <p class="ridge">Joseph Joester</p>
+        <p class="ridge">Examination Controller</p>
+        <p class="ridge">Contact no: 9808567342</p>
+        <p class="ridge">Email:hamon@gmail.com</p>
+
+    </div>
+    <div class="staff-2">
+        <img src="{% static 'woman.png' %}" alt="">
+        <p class="ridge">Kujo Jolyne</p>
+        <p class="ridge">ASST. Manager(ECA Discipline)</p>
+        <p class="ridge">Contact no: 9808567342</p>
+        <p class="ridge">Email:rock@gmail.com</p>
+
+    </div>
+    <div class="staff-3">
+        <img src="{% static 'woman.png' %}" alt="">
+        <p class="ridge">Giorno Govanno</p>
+        <p class="ridge">Program Cordinator</p>
+        <p class="ridge">Contact no: 9808567342</p>
+        <p class="ridge">Email:rock@gmail.com</p>
+
+    </div>
+    
+
+    
+        
+    </body>
+</html> 

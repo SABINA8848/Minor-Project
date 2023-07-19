@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="{% url 'index' %}" method="post" autocomplete="off" class="Login-form">
+                       {% csrf_token %}
+                        <div class="heading">
+                            <h2>Welcome To</h2>
+                            <h3>Student Login</h3>
+                           
+
+                           
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text"
+                                name="username"
+                                minlength="4"
+                                class="input-field"
+                                autocomplete="off"
+                               
+                                required/>
+                                <label >Username</label>
+                                
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password"
+                                name="password"
+                                minlength="4"
+                                class="input-field"
+                                autocomplete="off"
+                               
+                                required/>
+                                <label >Password</label>
+                                
+                            </div>
+                            <input type="submit"  value="Login" class="login-btn">
+                            
+                            <p class="text">
+                                Forgotten your password or your login details?
+                                <a href="{% url 'register' %}">Register</a> Logging In
+                            </p>
+                            
+                        </div>
+                        </div>
+                         </form>
+                    
+                </div>
+                
+                <div class="carousel">
+                     <div class="logo">
+                            <img src="{% static 'preview_image20210827-22504-1yprf6c-removebg-preview.png' %}" alt="College">
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'Register.css' %}">
+
+</head>
+<body>
+  
+        <div class="main">
+            <div class="Register"><h1>Register</h1>
+                <div class="form">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                         <label for="">Username</label>
+                         <input type="text" id="username" name="username" placeholder="Username" Required>
+                          <br>
+                         <label for="">First Name</label>
+                         <input type="text" id="fname" name="fname" placeholder="First Name" Required>
+                         <br>
+                
+                         <label for="">Last Name</label>
+                         <input type="text" id="lname" name="lname" placeholder="Last Name" Required>
+                         <br>
+                
+                         <label for="">Email Address</label>
+                         <input type="email" id="email" name="email" placeholder="Email Address" Required>
+                         <br>
+                
+                         <label for="">Password</label>
+                         <input type="password" id="password" name="password" placeholder="Password" Required>
+                         <br>
+                
+                         
+                
+                         
+                         <button type="submit">Register</button>
+                
+                
+                            
+                
+                
+                        </form>
+                      
+    
+                </div>
+               
+            
+               </div>
+        </div>
+           
+        
+ 
+    
+        <script src="{% static 'register.js' %}"></script>
+     
+    
+</body>
+</html>

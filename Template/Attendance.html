@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student </title>
+    <link rel="stylesheet" href="{% static 'Attendance.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="Dashboard.html"></a>
+
+            <h1>College</h1>
+            <ul class="nav__menu">
+                <li><a href="{% url 'dashboard' %}">Profile</a>
+                </li>
+                <li><a href="{% url 'notice' %}">Notice</a>
+                </li>
+              
+                <li><a href="{% url 'syllabus' %}">Syallbus&OQ</a></li>
+                <li><a href="{% url 'attendance' %}">Attendance</a></li>
+                
+                <li><a href="{% url 'staffs' %}">Staffs</a> </li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
+
+            </ul>
+        
+    </nav>
+    <section class="bod">
+        <div class="sheet">
+            <h1>Your Attendance</h1>
+        </div>
+        <div class="inform">
+            Student must have attendance of atleast 80%. Below it won't be eligible to attend the board exam. If you had reasons to be absent then  inform the college administartion.
+        </div>
+           <div class="Attend">
+        <h1>Student Personal Attendance</h1>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Subject</th>
+                <th>Attendance Status</th>
+            </tr>
+            <tr>
+                <td>2023-07-19</td>
+                <td>Mathematics</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>2023-07-20</td>
+                <td>Science</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>2023-07-21</td>
+                <td>English</td>
+                <td>Present</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </div>
+       
+        </div>
+    </section>
+</body>
+
+</html>

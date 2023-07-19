@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student </title>
+    <link rel="stylesheet" href="{% static 'Dashboard.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="Dashboard.html"></a>
+              
+                <h1>College</h1>
+            <ul class="nav__menu">
+              <li><a href="{% url 'dashboard' %}">Profile</a>
+              </li>
+              <li><a href="{% url 'notice' %}">Notice</a>
+              </li>
+             
+              <li><a href="{% url 'syllabus' %}">Syallbus</a></li>
+              <li><a href="{% url 'attendance' %}">Attendance</a></li>
+              <li><a href="{% url 'syllabus' %}">Syallbus&OQ</a></li>
+              <li><a href="{% url 'staffs' %}">Staffs</a> </li>
+              <li><a href="{% url 'logout' %}">Log Out</a></li>
+                
+            </ul>
+          
+
+
+      
+
+        </div>
+    </nav>
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <div class="personal-details">
+                    <h2>Student Details</h2>
+                <img src="{% static 'face.jpeg' %}" alt="">
+                <h3>BCIS 4th Batch</h3>
+
+
+            </div>
+            <div class="header__right">
+                <table class="details">
+                  <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><span id="name">Aida Liger</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="DOB">Date of Birth:</label></td>
+                    <td><span id="DOB">2061/04/17</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="P-Address">Permanent Address:</label></td>
+                    <td><span id="P-Address">Kathamandu</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="T-Address">Temporary Address:</label></td>
+                    <td><span id="T-Address">Kathmandu</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="BG">Blood Group:</label></td>
+                    <td><span id="BG">A+</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><span id="email">aida@example.com</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><span id="phone">9808675433</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="University-reg-no">University-reg-no:</label></td>
+                    <td><span id="University-reg-no">67895-5657-78766</span></td>
+                  </tr>
+                  <tr>
+                    <td><label for="Symbol">Symbol no:</label></td>
+                    <td><span id="Symbol">23456789</span></td>
+                  </tr>
+                </table>
+              </div>
+
+              <script src="main.js">
+
+              </script>
+    
+</body>
+</html>
